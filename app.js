@@ -28,9 +28,9 @@ const statusMessage = document.getElementById('statusMessage'); // Get the new m
 
 // Image Assets
 const astronautImg = new Image();
-astronautImg.src = "assets/astronaut_eva.png"; // Movable astronaut
+astronautImg.src = "NBLwebp/astronaut_eva.png"; // Movable astronaut
 const bgImg = new Image();
-bgImg.src = "assets/NBL.webp"; // Static background
+bgImg.src = "NBLwebp/NBL.webp"; // Static background
 
 // Astronaut physics (TUNED FOR MICROGRAVITY/COASTING)
 let astronaut = {
@@ -213,4 +213,5 @@ resizeCanvas();
 
 // Start the animation loop
 bgImg.onload = draw;
+
 if (bgImg.complete) draw();
