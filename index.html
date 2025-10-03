@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS 25th Anniversary Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Experience the ISS</h1>
+        <p>Explore the Cupola view and weightlessness onboard the International Space Station.</p>
+    </header>
+
+    <main>
+        <div class="split-container">
+            <section id="cupola">
+                <h2>🌍 Cupola View</h2>
+                <div class="cupola-view">
+                    <video id="cupolaVideo" autoplay muted loop playsinline>
+                        <source src="assets/earth.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+
+            <section id="weightlessness">
+                <h2>🛰️ NBL Training Simulator</h2>
+                <canvas id="spaceCanvas"></canvas>
+                
+                <div id="statusMessage" class="nbl-message"></div> 
+                
+                <div class="controls">
+                    <p>Use <b>WASD</b> or <b>Arrows</b> to move the astronaut.</p>
+                    <p class="task-prompt">Task: Stabilize near the <b id="taskTargetName">Repair Point</b> for 2 seconds.</p>
+                </div>
+            </section>
+        </div>
+
+        <section id="info">
+            <h2>📘 Learn More: The Earth Benefit</h2>
+            <p>The ISS provides new perspectives and data for Earth science. Astronaut training in the NBL refines procedures and tool design, directly benefiting deep-sea robotics, remote surgery, and complex terrestrial engineering projects.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created for NASA Space Apps Challenge 2025</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
